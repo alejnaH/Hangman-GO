@@ -2,12 +2,14 @@ package main
 
 import (
 	"context"
-	"fmt"
+
+	"HangmanUI/internal/game"
 )
 
 // App struct
 type App struct {
 	ctx context.Context
+	g   *game.Game
 }
 
 // NewApp creates a new App application struct
@@ -21,7 +23,24 @@ func (a *App) startup(ctx context.Context) {
 	a.ctx = ctx
 }
 
-// Greet returns a greeting for the given name
-func (a *App) Greet(name string) string {
-	return fmt.Sprintf("Hello %s, It's show time!", name)
+// Called from UI to start/refresh a game
+func (a *App) NewGame() game.State {
+	a.g = game.NewRandom()
+	return a.g.State()
+}
+
+// Called from UI to make a guess
+func (a *App) Guess(letter string) game.State {
+	if a.g == nil {
+		a.g = game.NewRandom()
+	}
+	return a.g.Guess(letter)
+}
+
+// Called from UI to read current state
+func (a *App) GetState() game.State {
+	if a.g == nil {
+		a.g = game.NewRandom()
+	}
+	return a.g.State()
 }
