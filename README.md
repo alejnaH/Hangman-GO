@@ -1,10 +1,10 @@
 # Hangman Game
 
-A fun and interactive implementation of the classic Hangman game, built using Go (Golang) for the backend logic and React + Wails for the frontend UI.
+a fun and interactive implementation of the classic Hangman game, built using Go (Golang) for the backend logic and React + Wails for the frontend UI.
 
 ---
 
-## Features
+## features
 
 - random word selection from a word list  
 - tracking correct and incorrect guesses   
@@ -14,10 +14,10 @@ A fun and interactive implementation of the classic Hangman game, built using Go
 - fun :) 
 
 
-## Technologies & Frameworks Used 
-- Backend
+## technologies & frameworks used 
+- backend
   - Go (Golang)
-- Frontend
+- frontend
   - React
   - Wails v2
   - HTML5, CSS3
