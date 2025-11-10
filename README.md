@@ -1,15 +1,25 @@
-# 🪓 Hangman Game in Go
+# Hangman Game
 
-A simple and fun command-line implementation of the classic Hangman game, written in the Go (Golang) programming language.
+A fun and interactive implementation of the classic Hangman game, built using Go (Golang) for the backend logic and React + Wails for the frontend UI.
 
 ---
 
-## 🎯 Features
+## Features
 
-- 🧠 Random word selection from a preset list  
-- ✏️ Tracks correct and incorrect guesses  
-- 🎨 ASCII art for visual feedback  
-- 💾 Modular and easy-to-extend codebase  
-- ⚡ Lightweight — pure Go, no dependencies  
+- random word selection from a word list  
+- tracking correct and incorrect guesses   
+- responsive on-screen keyboard layout with hover effects
+- resposnive layout for different sizes
+- win/loss notifications with color-coded messages
+- fun :) 
+
+
+## Technologies & Frameworks Used 
+- Backend
+  - Go (Golang)
+- Frontend
+  - React
+  - Wails v2
+  - HTML5, CSS3
 
 ---
